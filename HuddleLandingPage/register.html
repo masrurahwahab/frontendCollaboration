@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account - Huddle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin:0; padding:0; background:linear-gradient(135deg, #713fc4, #a74ac7); font-family:Arial, sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh;">
+
+<form onsubmit="return document.getElementById('password').value === document.getElementById('confirm').value"
+      style="background:#fff; padding:30px 40px; border-radius:15px; width:320px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+
+    <h2 style="color:#713fc4; margin-bottom:15px;">Create Account</h2>
+
+    <input type="text" placeholder="Full Name" required
+           style="background:#f4f0ff; color:#333; width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #c5a8f3;"><br>
+
+    <input type="email" placeholder="Email Address" required
+           style="background:#f4f0ff; color:#333; width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #c5a8f3;"><br>
+
+    <input type="password" id="password" placeholder="Password" required minlength="6"
+           style="background:#f4f0ff; color:#333; width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #c5a8f3;"><br>
+
+    <input type="password" id="confirm" placeholder="Confirm Password" required minlength="6"
+           oninput="this.setCustomValidity(this.value !== document.getElementById('password').value ? 'Passwords do not match' : '')"
+           style="background:#f4f0ff; color:#333; width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #c5a8f3;"><br>
+
+    <button type="submit"
+            style="width:100%; padding:10px; background-color:#713fc4; color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer; transition:background 0.3s;">
+        Register
+    </button>
+
+    <a href="Signin.html"
+       style="display:inline-block; font-size:13px; color:#a74ac7; margin-top:15px; text-decoration:none;">Already have an account?</a>
+
+    <div style="margin-top:20px; font-size:14px;">
+        <p style="margin-bottom:10px; color:#713fc4;">Login with</p>
+        <a href="https://www.facebook.com/login"><i class="fab fa-facebook-f" style="margin:0 8px; font-size:18px; color:#713fc4;"></i></a>
+        <a href="https://twitter.com/login"><i class="fab fa-twitter" style="margin:0 8px; font-size:18px; color:#713fc4;"></i></a>        
+        <a href="https://www.instagram.com/accounts/login"><i class="fab fa-instagram" style="margin:0 8px; font-size:18px; color:#713fc4;"></i></a>
+    </div>
+
+    <div style="margin-top:20px;">
+        <a href="index.html" style="text-decoration:none;">
+            <button type="button"
+                    style="padding:10px 15px; border-radius:6px; border:none; font-weight:bold; cursor:pointer; background-color:#e4d8f7; color:#713fc4;">
+                ← Back
+            </button>
+        </a>
+    </div>
+</form>
+
+</body>
+</html>
