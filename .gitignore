@@ -1,0 +1,28 @@
+## Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore build output
+bin/
+obj/
+
+## Ignore temporary files
+*.log
+*.tlog
+*.tmp
+*.cache
+*.db
+*.pdb
+
+## Ignore NuGet and package files
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+
+## Ignore config files that may be user-specific
+appsettings.Development.json
